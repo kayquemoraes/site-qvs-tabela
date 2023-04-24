@@ -1,4 +1,9 @@
 /* Global styles */
+*{
+  box-sizing: border-box;
+  outline:none;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f5f5f5;
@@ -27,14 +32,16 @@ h1{
 .product-card {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 1vh;
   padding: 20px;
   text-align: center;
 }
 
 .product-card img {
+  border-radius: 1vh;
   width: 100%;
   height: auto;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 0px 5px rgba(0,0,0,0.1);
 }
 
 .product-card h2 {
@@ -44,6 +51,7 @@ h1{
 
 .product-card p {
   font-size: 14px;
+  font-style: italic;
   line-height: 1.4;
   margin-bottom: 15px;
 }
@@ -51,7 +59,6 @@ h1{
 .product-card button {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  font-weight: bold;
   background-color: #3498db;
   width: 20vh;
   height: 5vh;
