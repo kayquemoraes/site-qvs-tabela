@@ -14,7 +14,7 @@ form.addEventListener('submit', (event) => {
   } else {
     Swal.fire({
       title: 'Erro!',
-      text: 'O nome da empresa não é válido.',
+      text: 'Código inválido.',
       icon: 'error',
       confirmButtonText: 'OK'
     });
