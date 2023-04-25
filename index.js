@@ -5,11 +5,21 @@ form.addEventListener('submit', (event) => {
   if (empresa === 'CDSP-DISTRIBUIDOR') {
     Swal.fire({
       title: 'Sucesso!',
-      text: 'Você será redirecionado para a página do distribuidor.',
+      text: 'Você será redirecionado para a página de distribuidor.',
       icon: 'success',
       confirmButtonText: 'OK'
     }).then(() => {
       window.location.href = 'distribuidor.html';
+    });
+  }
+  else if(empresa === 'CDSP-LOJISTA'){
+    Swal.fire({
+      title: 'Sucesso!',
+      text: 'Você será redirecionado para a página de logista.',
+      icon: 'success',
+      confirmButtonText: 'OK'
+    }).then(() => {
+      window.location.href = 'lojista.html';
     });
   } else {
     Swal.fire({
