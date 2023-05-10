@@ -21,6 +21,18 @@ form.addEventListener('submit', (event) => {
     }).then(() => {
       window.location.href = 'lojista.html';
     });
+  
+  }
+  else if(empresa === 'CDSP-1563'){
+    Swal.fire({
+      title: 'Sucesso!',
+      text: 'Você será redirecionado para sua página.',
+      icon: 'success',
+      confirmButtonText: 'OK'
+    }).then(() => {
+      window.location.href = 'somtel.html';
+    });
+  
   } else {
     Swal.fire({
       title: 'Erro!',
